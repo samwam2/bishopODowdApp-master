@@ -20,7 +20,9 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Student" id="b51-Qq-11f"/>
+                    <tabBarItem key="tabBarItem" title="Student" id="b51-Qq-11f">
+                        <inset key="imageInsets" minX="4" minY="6" maxX="5" maxY="5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgT-7s-QuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +58,7 @@
                         <viewControllerLayoutGuide type="top" id="Qbk-Xh-5Jg"/>
                         <viewControllerLayoutGuide type="bottom" id="HP3-cJ-5Iz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Q1l-Vz-Rkb" userLabel="View" customClass="first">
+                    <view key="view" contentMode="scaleToFill" id="Q1l-Vz-Rkb" userLabel="View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -64,8 +66,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="641" height="713"/>
                                 <animations/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-sR-vOT">
-                                <rect key="frame" x="0.0" y="106" width="600" height="1123"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-sR-vOT">
+                                <rect key="frame" x="0.0" y="106" width="600" height="445"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textInHere-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lkc-DZ-dLQ">
                                         <rect key="frame" x="135" y="1012" width="329" height="44"/>
@@ -161,9 +163,20 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ido-oc-hxv">
+                                        <rect key="frame" x="28" y="25" width="538" height="143"/>
+                                        <animations/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="aiK-0e-jsF" kind="push" id="RwR-sS-OWN"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news1" translatesAutoresizingMaskIntoConstraints="NO" id="S5a-0h-w0l">
                                         <rect key="frame" x="28" y="25" width="538" height="143"/>
                                         <animations/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="143" id="ry2-Em-5Hc"/>
                                         </constraints>
@@ -234,17 +247,6 @@
                                     <constraint firstItem="IiY-dn-Cv8" firstAttribute="trailing" secondItem="F1L-v5-GLM" secondAttribute="trailing" id="zma-qb-fus"/>
                                 </constraints>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="qql-Fm-mcP">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="105"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bishop O'Dowd School News" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsT-WP-ETR">
-                                <rect key="frame" x="162" y="14" width="245" height="78"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" red="0.99607843137254903" green="0.71764705882352942" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,18 +259,39 @@
                             <constraint firstItem="tI7-sR-vOT" firstAttribute="leading" secondItem="Q1l-Vz-Rkb" secondAttribute="leadingMargin" constant="-20" id="jAI-Wl-0pC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" id="2wf-tc-8hx">
+                    <tabBarItem key="tabBarItem" title="News" image="Fourth" id="2wf-tc-8hx">
                         <inset key="imageInsets" minX="5" minY="7" maxX="5" maxY="2"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="XH4-L5-fH3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClU-WD-Vzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="120"/>
+            <point key="canvasLocation" x="552" y="-364"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="94k-HC-HmQ">
+            <objects>
+                <viewController id="QZh-1A-cPF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VEc-dm-hZR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zco-RN-W6r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y4N-pb-byO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L0a-W5-bIu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSz-nb-6AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="-372"/>
         </scene>
         <!--Parents-->
         <scene sceneID="W04-hA-3wg">
             <objects>
-                <viewController id="Gmw-q8-8YH" sceneMemberID="viewController">
+                <viewController id="Gmw-q8-8YH" customClass="parentsSide" customModule="bishopODowdApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wPb-BJ-69g"/>
                         <viewControllerLayoutGuide type="bottom" id="e9S-6K-eDo"/>
@@ -285,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W7-tA-fM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="260.99999999999994"/>
+            <point key="canvasLocation" x="1992" y="466"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wq0-PU-F2h">
@@ -308,10 +331,29 @@
             </objects>
             <point key="canvasLocation" x="-160" y="312"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r95-9S-TsM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aiK-0e-jsF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vnX-1B-VFt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jai-HS-UVs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QZh-1A-cPF" kind="relationship" relationship="rootViewController" id="G3H-zr-CvV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2z-hE-210" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="-372"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Fourth" width="50" height="50"/>
-        <image name="Logo" width="292" height="266"/>
         <image name="backgroundODowd" width="414" height="709"/>
         <image name="news 4" width="815" height="400"/>
         <image name="news1" width="410" height="201"/>
@@ -321,4 +363,5 @@
         <image name="textInHere-1" width="392" height="44"/>
         <image name="third" width="50" height="50"/>
     </resources>
+    <color key="tintColor" red="1" green="0.72044130453876054" blue="0.05608789903850564" alpha="1" colorSpace="calibratedRGB"/>
 </document>
