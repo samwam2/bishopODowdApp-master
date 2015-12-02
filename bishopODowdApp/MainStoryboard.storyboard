@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hZu-Qd-Bdc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hZu-Qd-Bdc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Student-->
+        <!--Second View Controller-->
         <scene sceneID="S47-B7-XRl">
             <objects>
-                <viewController id="VYL-4h-jHj" sceneMemberID="viewController">
+                <viewController id="VYL-4h-jHj" customClass="SecondViewController" customModule="bishopODowdApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BVI-m3-glM"/>
                         <viewControllerLayoutGuide type="bottom" id="LR1-53-gwm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jbd-od-YaS" customClass="Sec">
+                    <view key="view" contentMode="scaleToFill" id="jbd-od-YaS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundODowd" translatesAutoresizingMaskIntoConstraints="NO" id="X59-cQ-6Xi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Student" id="b51-Qq-11f">
-                        <inset key="imageInsets" minX="4" minY="6" maxX="5" maxY="5"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="tW1-0M-aWA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgT-7s-QuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="797.99999999999989"/>
+            <point key="canvasLocation" x="1496" y="797"/>
         </scene>
         <!--Calendar -->
         <scene sceneID="XVO-P1-H1H">
@@ -48,12 +52,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQu-kd-BsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-136" y="1216.9999999999998"/>
+            <point key="canvasLocation" x="-160" y="1180"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="KgY-yJ-kFW">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="WGc-ME-GhR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" id="bCw-Ks-1Jl">
+                        <inset key="imageInsets" minX="5" minY="7" maxX="2" maxY="3"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V0s-QB-gdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S6J-HL-auE" kind="relationship" relationship="rootViewController" id="sI7-ce-LM0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSB-Bt-D7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="-564"/>
         </scene>
         <!--News-->
         <scene sceneID="WDt-YF-gEB">
             <objects>
-                <viewController id="S6J-HL-auE" customClass="FirstViewController" customModule="bishopODowdApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="News" id="S6J-HL-auE" customClass="FirstViewController" customModule="bishopODowdApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qbk-Xh-5Jg"/>
                         <viewControllerLayoutGuide type="bottom" id="HP3-cJ-5Iz"/>
@@ -163,12 +187,12 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ido-oc-hxv">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ido-oc-hxv">
                                         <rect key="frame" x="28" y="25" width="538" height="143"/>
                                         <animations/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="aiK-0e-jsF" kind="push" id="RwR-sS-OWN"/>
+                                            <segue destination="eTI-eL-TLA" kind="show" id="fe2-0f-keL"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news1" translatesAutoresizingMaskIntoConstraints="NO" id="S5a-0h-w0l">
@@ -259,34 +283,66 @@
                             <constraint firstItem="tI7-sR-vOT" firstAttribute="leading" secondItem="Q1l-Vz-Rkb" secondAttribute="leadingMargin" constant="-20" id="jAI-Wl-0pC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" image="Fourth" id="2wf-tc-8hx">
-                        <inset key="imageInsets" minX="5" minY="7" maxX="5" maxY="2"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Item" id="1bZ-O3-64K"/>
                     <navigationItem key="navigationItem" id="XH4-L5-fH3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClU-WD-Vzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552" y="-364"/>
+            <point key="canvasLocation" x="1052" y="-564"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="94k-HC-HmQ">
+        <!--News load here-->
+        <scene sceneID="ZrB-zI-hZt">
             <objects>
-                <viewController id="QZh-1A-cPF" sceneMemberID="viewController">
+                <viewController title="News load here" hidesBottomBarWhenPushed="YES" id="eTI-eL-TLA" customClass="newsMore" customModule="bishopODowdApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VEc-dm-hZR"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zco-RN-W6r"/>
+                        <viewControllerLayoutGuide type="top" id="jcy-8b-iW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9Z-YK-hAN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Y4N-pb-byO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="IPp-kQ-goT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sc-kO-9Mp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="O'Dowd News" id="ebM-Y9-jwM">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="qDt-UA-BIq">
+                                            <connections>
+                                                <segue destination="S6J-HL-auE" kind="presentation" id="qPD-sF-egk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYL-pQ-1KY">
+                                <rect key="frame" x="0.0" y="44" width="600" height="507"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1sc-kO-9Mp" firstAttribute="leading" secondItem="IPp-kQ-goT" secondAttribute="leadingMargin" constant="-20" id="BTL-jd-1Yx"/>
+                            <constraint firstItem="GYL-pQ-1KY" firstAttribute="leading" secondItem="IPp-kQ-goT" secondAttribute="leadingMargin" constant="-20" id="Ceg-dF-EnM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1sc-kO-9Mp" secondAttribute="trailing" constant="-20" id="dCm-K4-GQE"/>
+                            <constraint firstItem="1sc-kO-9Mp" firstAttribute="top" secondItem="IPp-kQ-goT" secondAttribute="topMargin" id="fIo-Is-4Te"/>
+                            <constraint firstItem="GYL-pQ-1KY" firstAttribute="top" secondItem="1sc-kO-9Mp" secondAttribute="bottom" id="gzj-Fr-P7j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GYL-pQ-1KY" secondAttribute="trailing" constant="-20" id="iLD-oi-m2x"/>
+                            <constraint firstItem="r9Z-YK-hAN" firstAttribute="top" secondItem="GYL-pQ-1KY" secondAttribute="bottom" id="jHS-AI-9uj"/>
+                            <constraint firstItem="GYL-pQ-1KY" firstAttribute="top" secondItem="1sc-kO-9Mp" secondAttribute="bottom" id="udz-fk-VpL"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="L0a-W5-bIu"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="HV5-fS-zrm"/>
+                    <connections>
+                        <outlet property="webView" destination="GYL-pQ-1KY" id="JCM-77-lJ0"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fSz-nb-6AS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2X-LC-Uzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="-372"/>
+            <point key="canvasLocation" x="1772" y="-609"/>
         </scene>
         <!--Parents-->
         <scene sceneID="W04-hA-3wg">
@@ -308,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W7-tA-fM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992" y="466"/>
+            <point key="canvasLocation" x="2956" y="506"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wq0-PU-F2h">
@@ -321,35 +377,43 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="S6J-HL-auE" kind="relationship" relationship="viewControllers" id="o5o-3I-kOa"/>
-                        <segue destination="VYL-4h-jHj" kind="relationship" relationship="viewControllers" id="cZb-fc-DO5"/>
+                        <segue destination="WGc-ME-GhR" kind="relationship" relationship="viewControllers" id="5SJ-ND-jAa"/>
+                        <segue destination="4I2-QJ-UkW" kind="relationship" relationship="viewControllers" id="cZb-fc-DO5"/>
                         <segue destination="Gmw-q8-8YH" kind="relationship" relationship="viewControllers" id="Sd0-A2-66o"/>
                         <segue destination="zmc-qx-7BN" kind="relationship" relationship="viewControllers" id="iWx-cq-F0L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufw-cJ-pss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-160" y="312"/>
+            <point key="canvasLocation" x="-368" y="312"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="r95-9S-TsM">
+        <!--Student-->
+        <scene sceneID="U4a-FB-1f2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aiK-0e-jsF" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4I2-QJ-UkW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Student" id="b51-Qq-11f">
+                        <inset key="imageInsets" minX="4" minY="6" maxX="5" maxY="5"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="vnX-1B-VFt"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jai-HS-UVs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q1z-au-qxT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ejZ-UV-2hd">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" red="1" green="0.72044130453876054" blue="0.05608789903850564" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="QZh-1A-cPF" kind="relationship" relationship="rootViewController" id="G3H-zr-CvV"/>
+                        <segue destination="VYL-4h-jHj" kind="relationship" relationship="rootViewController" id="OGL-YK-wMk"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R2z-hE-210" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cM3-7d-7qp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="-372"/>
+            <point key="canvasLocation" x="684" y="797"/>
         </scene>
     </scenes>
     <resources>
@@ -363,5 +427,8 @@
         <image name="textInHere-1" width="392" height="44"/>
         <image name="third" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sI7-ce-LM0"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.72044130453876054" blue="0.05608789903850564" alpha="1" colorSpace="calibratedRGB"/>
 </document>

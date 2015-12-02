@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822EEA081BD581AD004D4BA5 /* newsMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EEA071BD581AD004D4BA5 /* newsMore.swift */; settings = {ASSET_TAGS = (); }; };
 		824694FD1BC08F00001AF265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824694FC1BC08F00001AF265 /* AppDelegate.swift */; };
 		824694FF1BC08F00001AF265 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824694FE1BC08F00001AF265 /* FirstViewController.swift */; };
 		824695011BC08F00001AF265 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824695001BC08F00001AF265 /* SecondViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		822EEA071BD581AD004D4BA5 /* newsMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsMore.swift; sourceTree = "<group>"; };
 		824694F91BC08F00001AF265 /* bishopODowdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bishopODowdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824694FC1BC08F00001AF265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		824694FE1BC08F00001AF265 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -120,12 +122,13 @@
 				824694FE1BC08F00001AF265 /* FirstViewController.swift */,
 				824695001BC08F00001AF265 /* SecondViewController.swift */,
 				8246952C1BC09717001AF265 /* parentsSide.swift */,
-				82F224E71BC84D620096911C /* newsInfoScreen.swift */,
 				82F224E91BC8852F0096911C /* MainStoryboard.storyboard */,
+				822EEA071BD581AD004D4BA5 /* newsMore.swift */,
 				8246952E1BC09789001AF265 /* calenderSide.swift */,
 				824695051BC08F00001AF265 /* Assets.xcassets */,
 				824695071BC08F00001AF265 /* LaunchScreen.storyboard */,
 				8246950A1BC08F00001AF265 /* Info.plist */,
+				82F224E71BC84D620096911C /* newsInfoScreen.swift */,
 				82D47B351BC0BBA5001C6E81 /* bishopODowdApp-Bridging-Header.h */,
 			);
 			path = bishopODowdApp;
@@ -298,6 +301,7 @@
 				824694FD1BC08F00001AF265 /* AppDelegate.swift in Sources */,
 				8246952F1BC09789001AF265 /* calenderSide.swift in Sources */,
 				8246952D1BC09717001AF265 /* parentsSide.swift in Sources */,
+				822EEA081BD581AD004D4BA5 /* newsMore.swift in Sources */,
 				824694FF1BC08F00001AF265 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

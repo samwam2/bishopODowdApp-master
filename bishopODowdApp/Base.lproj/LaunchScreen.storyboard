@@ -18,17 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="htn-KD-IgP">
-                                <rect key="frame" x="112" y="127" width="306" height="345"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="htn-KD-IgP">
+                                <rect key="frame" x="147" y="127" width="306" height="345"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Is Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idD-Vd-DLG">
-                                <rect key="frame" x="180" y="507" width="171" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="App Is Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idD-Vd-DLG">
+                                <rect key="frame" x="215" y="507" width="171" height="44"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="171" id="8Ws-PR-xWZ"/>
-                                    <constraint firstAttribute="height" constant="44" id="nhV-s4-YlY"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,14 +33,14 @@
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.75512861890000005" blue="0.049557246989999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="htn-KD-IgP" secondAttribute="trailing" constant="162" id="1Lp-GV-cgf"/>
-                            <constraint firstItem="htn-KD-IgP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="107" id="9nT-Xr-uq5"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="idD-Vd-DLG" secondAttribute="bottom" constant="49" id="F5z-4l-Fsc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="idD-Vd-DLG" secondAttribute="trailing" constant="229" id="JEA-dA-kM8"/>
-                            <constraint firstItem="idD-Vd-DLG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="160" id="ahl-BV-tP4"/>
-                            <constraint firstItem="idD-Vd-DLG" firstAttribute="top" secondItem="htn-KD-IgP" secondAttribute="bottom" constant="35" id="ejo-pK-NXD"/>
-                            <constraint firstItem="htn-KD-IgP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="92" id="kyt-Iw-JdH"/>
-                            <constraint firstItem="idD-Vd-DLG" firstAttribute="top" secondItem="htn-KD-IgP" secondAttribute="bottom" constant="35" id="rgn-Gp-Zpd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="idD-Vd-DLG" secondAttribute="trailing" constant="194" id="7cj-6l-Jdj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="htn-KD-IgP" secondAttribute="trailing" constant="127" id="7fa-cy-6fx"/>
+                            <constraint firstItem="idD-Vd-DLG" firstAttribute="top" secondItem="htn-KD-IgP" secondAttribute="bottom" constant="35" id="aS4-Ni-Hfk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="idD-Vd-DLG" secondAttribute="bottom" constant="49" id="dIQ-di-qUx"/>
+                            <constraint firstItem="idD-Vd-DLG" firstAttribute="top" secondItem="htn-KD-IgP" secondAttribute="bottom" constant="35" id="p10-Kl-AoA"/>
+                            <constraint firstItem="htn-KD-IgP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="107" id="qYt-id-YCf"/>
+                            <constraint firstItem="htn-KD-IgP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="127" id="tbs-09-Nlv"/>
+                            <constraint firstItem="idD-Vd-DLG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="195" id="xDT-lC-gvX"/>
                         </constraints>
                     </view>
                 </viewController>

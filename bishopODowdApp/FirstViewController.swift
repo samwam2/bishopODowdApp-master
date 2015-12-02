@@ -8,24 +8,18 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
 
-    @IBOutlet var scrollViewNews: UIScrollView!
+class FirstViewController: UIViewController, UIWebViewDelegate {
+
+   
     
-    @IBAction func newsOneButton(sender: AnyObject) {
-        
-    }
+   
+    @IBOutlet var webView: UIWebView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-      //  scrollViewNews
-    //        UIScrollView; *scrollViewItem=(UIScrollView *); self.viewDidLoad()
-        
-        
-        
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

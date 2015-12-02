@@ -2,4 +2,54 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bishopODowdApp/newsInfoScreen.swift"
+            timestampString = "466977544.000605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "newsInfoScreen"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bishopODowdApp.newsInfoScreen.init (bishopODowdApp.newsInfoScreen.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; bishopODowdApp.newsInfoScreen"
+                  moduleName = "bishopODowdApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/School/Desktop/Xcode%20Stuff/bishopODowdApp-master/bishopODowdApp/newsInfoScreen.swift"
+                  timestampString = "468280758.611222"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "bishopODowdApp.newsInfoScreen.init (bishopODowdApp.newsInfoScreen.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;bishopODowdApp.newsInfoScreen&gt;"
+                  moduleName = "bishopODowdApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/School/Desktop/Xcode%20Stuff/bishopODowdApp-master/bishopODowdApp/newsInfoScreen.swift"
+                  timestampString = "468280758.611468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
